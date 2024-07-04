@@ -62,7 +62,7 @@ To get started with this project, follow these steps:
 
 6. **Run the production build:**
     ```sh
-    npm run serve
+    npm run preview
     ```
 
 ## Acknowledgements
