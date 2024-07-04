@@ -1,0 +1,74 @@
+@import "@/index.scss";
+
+.sidebar {
+  min-height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F0F4F9;
+  padding: 25px 15px;
+
+  img {
+    width: 20px;
+  }
+
+  &__menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #E6EAF1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+  }
+}
+
+.recent {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1.5s;
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px 40px 10px 10px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e2e6eb;
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}

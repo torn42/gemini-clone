@@ -1,0 +1,20 @@
+.greet {
+  margin: 50px 0;
+  font-size: 56px;
+  color: #C4C7C5;
+  font-weight: 500;
+  padding: 20px;
+
+  span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
